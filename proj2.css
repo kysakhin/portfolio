@@ -34,6 +34,13 @@ body::-webkit-scrollbar:hover {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
 }
 
+.logo {
+	font-family: "Caveat", cursive;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 24px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
