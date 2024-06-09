@@ -318,6 +318,10 @@ li {
 		margin: 0;
 	}
 
+	html {
+		scroll-behavior: smooth;
+	}
+
 	.top {
 		position: fixed;
 		font-size: 1rem;
