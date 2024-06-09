@@ -13,3 +13,19 @@ function changeImg() {
 
 
 setInterval(changeImg, 3000); });
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+	var currentScrollpos = window.pageYOffset;
+	if(prevScrollpos > currentScrollpos) {
+		document.getElementById("top").style.top = "0";
+	} else {
+		document.getElementById("top").style.top = "-50px";
+	}
+	prevScrollpos = currentScrollpos;
+}
+
+function menu(x) {
+	x.classList.toggle("change");
+	document.getElementById("menu").classList.toggle("show");
+}
