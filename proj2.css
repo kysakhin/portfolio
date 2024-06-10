@@ -309,13 +309,10 @@ li {
 	body,
 	.box1,
 	.box2,
-	.box3,
-	body,
-	html {
+	.box3 {
 		overflow-x: hidden;
 		height: 100%;
-		width: 100%;
-		margin: 0;
+		overflow-y: auto;
 	}
 
 	html {
@@ -325,19 +322,23 @@ li {
 	.top {
 		position: fixed;
 		font-size: 1rem;
-		overflow-x: hidden;
-		height: fit-content;
 		padding: 10px;
 		font-size: 10px;
-		width: calc(100% - 20px);
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		overflow-x: hidden;
+		display: flex;
+		margin: 0;
+		padding-right: 20px;
 	}
 
 
 	.menu  {
-		display: none;
+		visibility: hidden;
 		opacity: 0;
-		top: -50px;
-		transition: opacity 0.7s;
+		transform: translateX(300px);
+		transition: 0.7s ;
 	}
 
 	.box1 {
@@ -363,7 +364,11 @@ li {
 
 	.box2,
 	.box3 {
-		height: fit-content;
+		height: fit-content;	}
+
+	.box2 {
+		height: 70vh;
+		justify-content: center;
 	}
 
 	.about {
@@ -407,6 +412,14 @@ li {
 		margin-left: 0;
 		display: flex;
 		justify-content: center;
+	}
+
+	.box3 h1 {
+		margin-bottom: 0;
+	}
+
+	.ard {
+		margin: 5%;
 	}
 
 	.proj-content {
@@ -455,10 +468,10 @@ li {
 		transform: translate(0,-8px) rotate(45deg);
 	}
 
-	.show {
-		display: flex;
-		opacity: 1;
-		top: 0;
+	.menu.show {
+		visibility: visible;
+		opacity: 1 !important;
+		transform: translateX(0);
 	}
 
 

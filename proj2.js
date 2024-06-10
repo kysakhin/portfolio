@@ -14,9 +14,11 @@ function changeImg() {
 
 setInterval(changeImg, 3000); });
 
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.scrollY;
 window.onscroll = function() {
-	var currentScrollpos = window.pageYOffset;
+	var currentScrollpos = window.scrollY;
+	console.log(prevScrollpos);
+	console.log(currentScrollpos);
 	if(prevScrollpos > currentScrollpos) {
 		document.getElementById("top").style.top = "0";
 	} else {
@@ -25,7 +27,17 @@ window.onscroll = function() {
 	prevScrollpos = currentScrollpos;
 }
 
-function menu(x) {
+function icon(x) {
 	x.classList.toggle("change");
-	document.getElementById("menu").classList.toggle("show");
+	var mele = document.getElementById("menu");
+	mele.classList.toggle("show");
+
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var scroll = new SmoothScroll('.smooth-scroll', {
+        speed: 800,
+        speedAsDuration: true
+    });
+});
+
