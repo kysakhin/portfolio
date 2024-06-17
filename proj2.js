@@ -17,8 +17,6 @@ setInterval(changeImg, 3000); });
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
 	var currentScrollpos = window.scrollY;
-	console.log(prevScrollpos);
-	console.log(currentScrollpos);
 	if(prevScrollpos > currentScrollpos) {
 		document.getElementById("top").style.top = "0";
 	} else {
