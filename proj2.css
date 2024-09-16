@@ -212,20 +212,6 @@ h1 {
     width: 100%;
 }
 
-<<<<<<< HEAD
-.box3 div {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-.box3> h1 {
-    color: #ebdbb2;
-    padding: 30px;
-    margin-left: 10%;
-    margin-top: 0;
-}
-=======
 /*.box3 div {*/
 /*	width: 80%;*/
 /*	margin-left: 10%;*/
@@ -238,7 +224,6 @@ h1 {
 /*    margin-left: 10%;*/
 /*    margin-top: 0;*/
 /*}*/
->>>>>>> c416adc (some changes)
 
 .box3 a {
     font-size: 1em;
@@ -314,20 +299,15 @@ h1 {
 	font-size: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .connections {
   width: 80%;
   margin: 0 auto;
 }
 
->>>>>>> c416adc (some changes)
 li {
 	margin: 6px;
 }
 
-<<<<<<< HEAD
-=======
 .big-parent {
   display: flex;
   flex-direction: row;
@@ -390,7 +370,6 @@ li {
   font-size: 1.3em;
 }
 
->>>>>>> c416adc (some changes)
 
 
 @media (max-width:600px) {
@@ -562,8 +541,6 @@ li {
 		transform: translateX(0);
 	}
 
-<<<<<<< HEAD
-=======
   .Para {
     height: 15rem;
     width: 15rem;
@@ -577,7 +554,5 @@ li {
     height: 15rem;
     width: 15rem;
   }
-
->>>>>>> c416adc (some changes)
 
 }

@@ -39,9 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-<<<<<<< HEAD
-=======
-
 
 $(".Para").hover(
   function () {
@@ -52,4 +49,3 @@ $(".Para").hover(
   }
 )
 
->>>>>>> c416adc (some changes)
