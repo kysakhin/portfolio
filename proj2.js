@@ -39,3 +39,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+<<<<<<< HEAD
+=======
+
+
+$(".Para").hover(
+  function () {
+    $(this).find('.dropdowns').stop(true, true).slideDown(300);
+  },
+  function () {
+    $(this).find('.dropdowns').stop(true, true).slideUp(300);
+  }
+)
+
+>>>>>>> c416adc (some changes)
